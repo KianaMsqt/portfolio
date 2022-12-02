@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+}
+
+html, body {
+    background: #fefcff;
+    color: #363636;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: #363636;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+/* Side Bar */
+aside {
+    background: #088f8f;
+}
+
+aside,
+aside a {
+    color: #ffffff;
+    text-align: center;
+}
+
+.avatar {
+    display: block;
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+ul li {
+    line-height: 2;
+}
+
+ul li a {
+    border-bottom: 2px solid #ffffff;
+}
+
+ul li:last-child a {
+    border-bottom: none;
+}
+
+/* Main Content */
+
+
+/* Work Experiences */
+
+
+/* Contact Links */
+
