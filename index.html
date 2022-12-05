@@ -8,16 +8,17 @@
         <link rel='stylesheet' type='text/css' media='screen' href='assets/css/style.css'>
     </head>
     <body>
-        <div class="grid">
+        <div class="flex-container">
 
             <aside>
 
-                <a href="#about" title="Kiana Masqati" class="avatar">
-                    <img alt="Kiana Masqati" src="assets/images/avatar.jpeg" />
-                </a>
-
-                <h1>Kiana Masqati</h1>
-
+                <figure>
+                    <div class="avatar">
+                        <img alt="Kiana Masqati" src="assets/images/avatar.jpeg" />
+                    </div>
+                    <figcaption><h1>Kiana Masqati</h1><br><h2>Front-End Developer</h2></figcaption>
+                </figure>
+                
                 <ul>
                     <li>
                         <a href="#about" title="About Me">About Me</a>
@@ -30,14 +31,12 @@
                     </li>
                 </ul>
 
-                <footer>Made by Kiana Masqati</footer>
-
             </aside>
 
             <main>
 
                 <section id="about">
-                    <h2>About Me</h2>
+                    <h3>About Me</h3>
                     <div class="text">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec tristique nisl, id finibus quam. Nam sed auctor mi. Curabitur viverra, orci nec luctus porttitor, libero risus mollis orci, vel cursus ex dolor sit amet diam. Donec pulvinar blandit purus sit amet mollis. Sed ante nulla, ultricies eu est tincidunt, consectetur vulputate purus. In pellentesque, sapien vitae posuere scelerisque, nisi dolor consectetur magna, at consectetur mauris velit iaculis metus. Proin commodo dolor non enim commodo, ac egestas risus porta. Quisque elementum nunc in tortor molestie egestas.
                         <br/>Fusce ut lorem quis sem commodo dictum. Proin efficitur dictum laoreet. Fusce sed pharetra leo. Nulla sollicitudin luctus quam, vel ullamcorper est sagittis vitae. Vivamus bibendum metus in elit imperdiet cursus. Vestibulum porta elit quis sem facilisis, iaculis viverra lectus ultricies. Proin porttitor purus vel nulla dictum tempor. Mauris eget nunc id odio varius viverra. Nullam scelerisque diam sit amet turpis condimentum semper. Vestibulum maximus, mi vitae dapibus vestibulum, metus augue luctus dui, sit amet accumsan diam quam quis sem. Ut dictum, nulla in ultrices rutrum, urna lorem condimentum sapien, non malesuada elit arcu fringilla elit. Praesent elit orci, consectetur id pellentesque vel, fringilla ac urna. In eros nisi, tincidunt sit amet nibh sit amet, placerat porttitor quam.
@@ -49,7 +48,7 @@
                 </section>
 
                 <section id="resume">
-                    <h2>My Resume</h2>
+                    <h3>My Resume</h3>
                     <div class="text">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec tristique nisl, id finibus quam. Nam sed auctor mi. Curabitur viverra, orci nec luctus porttitor, libero risus mollis orci, vel cursus ex dolor sit amet diam. Donec pulvinar blandit purus sit amet mollis. Sed ante nulla, ultricies eu est tincidunt, consectetur vulputate purus. In pellentesque, sapien vitae posuere scelerisque, nisi dolor consectetur magna, at consectetur mauris velit iaculis metus. Proin commodo dolor non enim commodo, ac egestas risus porta. Quisque elementum nunc in tortor molestie egestas.
                         <br/>Fusce ut lorem quis sem commodo dictum. Proin efficitur dictum laoreet. Fusce sed pharetra leo. Nulla sollicitudin luctus quam, vel ullamcorper est sagittis vitae. Vivamus bibendum metus in elit imperdiet cursus. Vestibulum porta elit quis sem facilisis, iaculis viverra lectus ultricies. Proin porttitor purus vel nulla dictum tempor. Mauris eget nunc id odio varius viverra. Nullam scelerisque diam sit amet turpis condimentum semper. Vestibulum maximus, mi vitae dapibus vestibulum, metus augue luctus dui, sit amet accumsan diam quam quis sem. Ut dictum, nulla in ultrices rutrum, urna lorem condimentum sapien, non malesuada elit arcu fringilla elit. Praesent elit orci, consectetur id pellentesque vel, fringilla ac urna. In eros nisi, tincidunt sit amet nibh sit amet, placerat porttitor quam.
@@ -61,7 +60,7 @@
                 </section>
 
                 <section id="contact">
-                    <h2>Contact Me</h2>
+                    <h3>Contact Me</h3>
                     <div class="text">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec tristique nisl, id finibus quam. Nam sed auctor mi. Curabitur viverra, orci nec luctus porttitor, libero risus mollis orci, vel cursus ex dolor sit amet diam. Donec pulvinar blandit purus sit amet mollis. Sed ante nulla, ultricies eu est tincidunt, consectetur vulputate purus. In pellentesque, sapien vitae posuere scelerisque, nisi dolor consectetur magna, at consectetur mauris velit iaculis metus. Proin commodo dolor non enim commodo, ac egestas risus porta. Quisque elementum nunc in tortor molestie egestas.
                         <br/>Fusce ut lorem quis sem commodo dictum. Proin efficitur dictum laoreet. Fusce sed pharetra leo. Nulla sollicitudin luctus quam, vel ullamcorper est sagittis vitae. Vivamus bibendum metus in elit imperdiet cursus. Vestibulum porta elit quis sem facilisis, iaculis viverra lectus ultricies. Proin porttitor purus vel nulla dictum tempor. Mauris eget nunc id odio varius viverra. Nullam scelerisque diam sit amet turpis condimentum semper. Vestibulum maximus, mi vitae dapibus vestibulum, metus augue luctus dui, sit amet accumsan diam quam quis sem. Ut dictum, nulla in ultrices rutrum, urna lorem condimentum sapien, non malesuada elit arcu fringilla elit. Praesent elit orci, consectetur id pellentesque vel, fringilla ac urna. In eros nisi, tincidunt sit amet nibh sit amet, placerat porttitor quam.
@@ -71,6 +70,8 @@
                         Quisque dapibus egestas nisl rhoncus imperdiet. Sed venenatis, justo vel tempor gravida, neque libero porta urna, a faucibus urna erat sit amet leo. Ut varius eu nisi vel laoreet. Morbi consequat mi lacus, nec dictum risus pellentesque quis. Sed ut ultricies urna. Pellentesque sed tortor eget nisi euismod eleifend. Morbi quis ante facilisis enim fringilla rutrum. Ut commodo pharetra metus, et pretium odio luctus vel. Pellentesque nec egestas diam. Etiam vitae pretium lectus. Vestibulum consequat quis dui sed tincidunt. Pellentesque sit amet lorem enim.
                     </div>
                 </section>
+
+                <footer>Made by Kiana Masqati</footer>
 
             </main>
 

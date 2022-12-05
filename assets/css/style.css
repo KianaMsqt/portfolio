@@ -3,11 +3,14 @@
     padding: 0;
     border: none;
     outline: none;
+    font-family: Verenda, sans-serif;
+    font-weight: 300;
 }
 
 html, body {
     background: #fefcff;
     color: #363636;
+    height: 100%;
 }
 
 img {
@@ -20,14 +23,28 @@ a {
     color: #363636;
 }
 
+h1 {
+    font-size: 28px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 22px;
+    font-weight: 500;
+}
+
 .grid {
     display: grid;
     grid-template-columns: 1fr 2fr;
 }
 
-/* Side Bar */
 aside {
+    display: grid;
     background: #088f8f;
+    width: 30%;
 }
 
 aside,
@@ -42,26 +59,58 @@ aside a {
     height: 250px;
     border-radius: 100%;
     overflow: hidden;
-    margin: 0 auto;
+    margin: 0 auto 1em;
 }
 
 ul li {
     line-height: 2;
+    list-style: none;
+    padding-bottom: 10px;
 }
 
 ul li a {
-    border-bottom: 2px solid #ffffff;
+    display: inline-block;
+    position: relative;
 }
 
-ul li:last-child a {
-    border-bottom: none;
+ul li a:after {
+    background: #ffffff;
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: 0;
+    left: 50%;
+    margin-top: 5px;
+    transition: .2s;
 }
 
-/* Main Content */
+ul li a:hover:after {
+    width: 100%;
+    left: 0;
+}
 
+main {
+    width: 70%;
+}
 
-/* Work Experiences */
+aside, main {
+    padding: 2em;
+}
 
+/* This part will make sidebar sticky */
+body {
+    display: flex;
+    flex-direction: column;
+}
 
-/* Contact Links */
+.flex-container {
+    flex: 1;
+    display: flex;
+    min-height: 0;
+}
 
+aside, main {
+    overflow: auto;
+}
