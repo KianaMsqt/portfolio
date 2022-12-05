@@ -12,6 +12,7 @@
     font-family: Verenda, sans-serif;
     font-weight: 300;
     scroll-behavior: smooth;
+    box-sizing: border-box;
 }
 
 html, body {
@@ -265,4 +266,90 @@ aside, main {
 
 .career .text p {
     padding-top: 2em;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .flex-container {
+        flex-direction: inherit;
+    }
+    aside, main {
+        overflow: inherit;
+        width: 100%;
+    }
+    aside ul li {
+        display: inline-block;
+        margin-top: 2em;
+    }
+    aside ul li a {
+        border-bottom: 1px solid var(--white);
+        margin-right: 5px;
+    }
+    aside ul li a:last-child {
+        margin-right: 0;
+    }
+    main section {
+        padding: 2em 0;
+    }
+    .career {
+        grid-row: 3;
+        grid-column: 1;
+        grid-template-areas: 
+            "date"
+            "title"
+            "description";
+    }
+    .career #date {
+        text-align: left;
+        padding-right: 0;
+        margin-bottom: 2em;
+        border-right: none;
+        border-bottom: 2px solid #555555;
+    }
+    .career #title,
+    .career #description {
+        padding-left: 0;
+    }
+    .contact-links li {
+        float: none;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+    aside {
+        width: 40%;
+    }
+    main {
+        width: 60%;
+    }
+    aside, main {
+        padding: 2em 1em;
+    }
+    section {
+        padding: 1em;
+    }
+    .avatar {
+        width: 180px;
+        height: 180px;
+    }
+    .contact-links li {
+        float: none;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
 }
