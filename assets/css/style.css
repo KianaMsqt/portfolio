@@ -125,6 +125,58 @@ section h3 {
     padding: 2em;
 }
 
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+        "portfolio portfolio portfolio"
+        "flashlight prework module1";
+    grid-template-rows: 300px 200px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.online-work {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 5px;
+    cursor: pointer;
+    display: grid;
+    align-content: end;
+    border: 2px solid var(--black);
+}
+
+.online-work a {
+    background-color: var(--black);
+    color: var(--white);
+    padding: 1em;
+    font-size: 12px;
+    transition: all .5s;
+}
+
+.online-work:hover a {
+    background-color: var(--colored);
+}
+
+#flashlight {
+    grid-area: flashlight;
+    background-image: url(../images/flashlight.jpeg);
+}
+
+#portfolio {
+    grid-area: portfolio;
+    background-image: url(../images/portfolio.jpeg);
+}
+
+#prework {
+    grid-area: prework;
+    background-image: url(../images/Front-End-Triology.jpeg);
+}
+
+#module1 {
+    grid-area: module1;
+    background-image: url(../images/bootcamp.jpeg);
+}
+
 .contact-links li,
 .social li {
     list-style: none;
